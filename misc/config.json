@@ -1,0 +1,14 @@
+{
+    "token": "your token",
+    "status": {
+        "state": "idle",
+        "type": "PLAYING",
+        "name": "Chat simulator"
+    },
+    "chat": {
+        "url": "http://api.brainshop.ai/get",
+        "bid": "your BID",
+        "key": "your key",
+        "uid": "your random name"
+    }
+}
