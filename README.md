@@ -21,7 +21,9 @@ Installing it is pretty easy.
 
 **PS**: Don't for get to add your __BOT TOKEN__ too.
 
-- now run in console `node index.js` and your bot should be ready to roll! 
+- now run in console `node index.js` and your bot should be ready to roll!
+
+<img src="https://i.ibb.co/H4Lm5BG/tut-04.png">
 
 ## Credits
 
