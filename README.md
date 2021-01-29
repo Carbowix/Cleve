@@ -5,7 +5,7 @@ Open sourced Discord chat bot powered by brainshop.ai
 Installing it is pretty easy.
 
 - Extract your `.zip` into a folder
-- Run `npm i` or `yarn install`
+- Run `npm install` or `yarn install`
 - Create a account at [brainshop](http://brainshop.ai/user/register)
 - Once created and logged-in, Press create a brain -> root brain
 
@@ -17,7 +17,7 @@ Installing it is pretty easy.
 
 <img src="https://i.ibb.co/3y2PXDt/tut-03.png">
 
-- Edit your `details.json` and replace it with your API details.
+- Edit your [config.json](https://github.com/Carbowix/Cleve/blob/master/misc/config.json) and replace it with your API details.
 
 **PS**: Don't for get to add your __BOT TOKEN__ too.
 
