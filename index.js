@@ -1,12 +1,15 @@
-const Discord = require('discord.js');
 const {
-    token,
+    Client,
+    Intents
+} = require('discord.js');
+const {
+    bot_token,
     status
 } = require('./misc/config.json');
-const client = new Discord.Client({
-    disableEveryone: true,
-    disabledEvents: ['CHANNEL_PINS_UPDATE', 'GUILD_BAN_ADD', 'GUILD_BAN_REMOVE', 'RELATIONSHIP_ADD', 'RELATIONSHIP_REMOVE']
+const client = new Client({
+    intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGE_TYPING, Intents.FLAGS.GUILD_MESSAGES]
 });
+
 client.util = require('./util');
 
 client.on('warn', err => console.warn('[WARNING]', err));
@@ -23,7 +26,7 @@ client.on('uncaughtException', (err) => {
     process.exit(1)
 });
 
-client.on('message', (msg) => {
+client.on('messageCreate', (msg) => {
     if (msg.author.bot) return;
     if (msg.guild) {
         if (msg.content.startsWith(`<@${msg.client.user.id}>`) || msg.content.startsWith(`<@!${msg.client.user.id}>`)) {
@@ -41,4 +44,4 @@ process.on('unhandledRejection', (reason, promise) => {
     console.log('[FATAL] Possibly Unhandled Rejection at: Promise ', promise, ' reason: ', reason.message);
 });
 
-client.login(token);
+client.login(bot_token);

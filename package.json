@@ -24,8 +24,7 @@
     "javascript"
   ],
   "dependencies": {
-    "discord.js": "^11.5.1",
-    "request": "^2.88.2",
-    "request-promise-native": "^1.0.9"
+    "discord.js": "^13.1.0",
+    "node-fetch": "^2.6.1"
   }
 }
