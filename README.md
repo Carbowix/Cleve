@@ -32,4 +32,4 @@ If you have any issues feel free to create one in the issues [section](https://g
 
 ## Credits
 
-- Thanks [BrainshopAI](http://brainshop.ai/) for providing free fast responsive clever bot API
+- Thanks [BrainshopAI](http://brainshop.ai/) for providing free and fast clever bot API
