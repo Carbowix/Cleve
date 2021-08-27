@@ -8,7 +8,7 @@ const {
 } = require('./misc/config.json');
 const mainURL = new URL(chat.url);
 const urlOptions = {
-    bid: chat.bid,
+    bid: chat.brainID,
     key: chat.key,
     uid: null,
     msg: null
