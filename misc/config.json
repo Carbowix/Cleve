@@ -1,5 +1,5 @@
 {
-    "bot_token": "<discord bot token here>",
+    "bot_token": "discordbottoken",
     "status": {
         "state": "idle",
         "type": "PLAYING",
@@ -7,8 +7,8 @@
     },
     "chat": {
         "url": "http://api.brainshop.ai/get",
-        "brainID": "<brainshop API brain ID here>",
-        "key": "<brainshop API key here>",
+        "brainID": "brainID",
+        "key": "brainkey",
         "channel": "<discord channel ID here>"
     }
 }

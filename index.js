@@ -1,13 +1,13 @@
 const {
     Client,
-    Intents
+    GatewayIntentBits 
 } = require('discord.js');
 const {
     bot_token,
     status
 } = require('./misc/config.json');
 const client = new Client({
-    intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGE_TYPING, Intents.FLAGS.GUILD_MESSAGES]
+    intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages]
 });
 
 client.util = require('./util');
