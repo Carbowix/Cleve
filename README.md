@@ -34,6 +34,7 @@
 - Once registered and logged-in, Press **create a brain** -> **root brain**
 - Enter your custom bot name and make sure details match the following:
 <img src="https://i.ibb.co/WGkXrw1/tut-02.png">
+
 - Once finished, edit [src/misc/config.json](https://github.com/Carbowix/Cleve/blob/master/src/misc/config.json) with the corresponding data given: 
 <img src="https://i.ibb.co/3y2PXDt/tut-03.png">
 
@@ -61,6 +62,7 @@
 - Slash commands that helps you ease your bot management
 - Set/Remove default chat text channels for the bot. (Supports multiple channels)
 <img src="./src/misc/images/feature.png" />
+
 - Ping command to ensure bot is ready to knock on your door.
 - No mention feature so that bot can talk without being mentioned. (**Check** [here](#how-to-enable-no-mention-feature) for more details)
 - Direct messages chatting is now available through configuration. (**Check** [here](#how-to-enable-direct-messages-feature) for more details)
