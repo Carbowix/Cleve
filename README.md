@@ -17,7 +17,7 @@
    <img src="https://img.shields.io/github/package-json/v/carbowix/cleve?style=for-the-badge" alt="cleve version"/>
 </a>
 <br>
-<a href="https://discord.gg/9a9VNQTj">
+<a href="https://discord.gg/nntu7rgxtP">
 <img src="https://img.shields.io/discord/633795546724827157?color=5865F2&logo=discord&logoColor=white" alt="Discord server" />
 </a>
 </p>
@@ -60,7 +60,7 @@
 ## Available Features
 - Slash commands that helps you ease your bot management
 - Set/Remove default chat text channels for the bot. (Supports multiple channels)
-<img src="./src/misc/images/feature.png">
+<img src="./src/misc/images/feature.png" />
 - Ping command to ensure bot is ready to knock on your door.
 - No mention feature so that bot can talk without being mentioned. (**Check** [here](#how-to-enable-no-mention-feature) for more details)
 - Direct messages chatting is now available through configuration. (**Check** [here](#how-to-enable-direct-messages-feature) for more details)
@@ -72,8 +72,8 @@ If you have any issues feel free to create one in the issues [section](https://g
 ### How to enable No mention feature
 Head to [src/misc/config.json](https://github.com/Carbowix/Cleve/blob/master/src/misc/config.json) and edit **"noMention"** value to `true`
 
--**IMPORANT**: In-order for this feature to work, you will have to enable [MessageContent Privileged Intent](https://autocode.com/discord/threads/what-are-discord-privileged-intents-and-how-do-i-enable-them-tutorial-0c3f9977/)in your discord bot application. Otherwise it will produce and error like the following:
-<img src="./src/misc/images/error#1.png">
+- **IMPORANT**: In-order for this feature to work, you will have to enable [MessageContent Privileged Intent](https://autocode.com/discord/threads/what-are-discord-privileged-intents-and-how-do-i-enable-them-tutorial-0c3f9977/) in your discord bot application. Otherwise it will produce and error like the following:
+<img src="./src/misc/images/error.png">
 
 ### How to enable Direct Messages feature
 Head to [src/misc/config.json](https://github.com/Carbowix/Cleve/blob/master/src/misc/config.json) and edit **"noMention"** value to `true`
