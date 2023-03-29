@@ -1,0 +1,22 @@
+{
+    "bot_token": "<discord bot token here>",
+    "activity": {
+      "activities": [
+        {
+          "name": "Chatting Simulator",
+          "type": 0
+        }
+      ],
+      "status": "online"
+    },
+    "chat": {
+      "url": "http://api.brainshop.ai/get",
+      "brainID": "<brainshop API brain ID here>",
+      "key": "<brainshop API key here>"
+    },
+    "misc": {
+      "channels": [],
+      "noMention": false,
+      "directMessage": true
+    }
+  }
