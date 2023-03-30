@@ -54,7 +54,7 @@ const loadModules = async (client) => {
 
 const handleTalk = async (client, msg) => {
     msg.content = msg.content.replace(/^<@!?[0-9]{1,20}> ?/i, ''); // Remove any mentions in the message
-    if (msg.content.length < 2 || (!msg.channel.isDMBased() && !client.misc.channels.includes(msg.channel.id))) return;
+    if (msg.content.length < 2 || (!msg.channel.isDMBased() && client.misc.channels.length > 0 && !client.misc.channels.includes(msg.channel.id))) return;
     msg.channel.sendTyping();
     urlOptions.uid = msg.author.id;
     urlOptions.msg = msg.content;
