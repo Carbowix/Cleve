@@ -43,11 +43,9 @@
 ### Adding discord bot details:
 - Create a discord bot [application](https://discordjs.guide/preparations/setting-up-a-bot-application.html#your-bot-s-token).
 - Once finished, edit [src/misc/config.json](https://github.com/Carbowix/Cleve/blob/master/src/misc/config.json) file at the **"bot_token"** parameter to insert your [BOT_TOKEN](https://www.writebots.com/discord-bot-token/).
+- **.env.example** file is also available in `src` folder if you want to use it for any hosting platform. Just insert your __BOT_TOKEN__ and you are good to go.
 
->**NOTE**: If you are running this bot on replit, Make sure to rename `.env.example` to `.env` and insert your discord bot token to "BOT_TOKEN="
-
-
-- Once you are done, run `npm run start` or `yarn run start` on the command prompt and it should be ready to talk!.
+Once you are done, run `npm run start` or `yarn run start` on the command prompt and it should be ready to talk!.
 ```bash
 [CLEVE] Loaded 3 commands
 [CLEVE] Ready to chat!
@@ -86,6 +84,9 @@ It most likely either you failed to to follow the [installation](#installation--
 ### Invalid Token even when loaded though .env file
 It is most likely the `.env` file is either still named `.env.example` which you should change to `.env` or the file is not in the `src` folder.
 Otherwise your bot token is actually invalid.
+
+### Unexpected Token 'S' at position 0
+If you are getting that error, it is most likely you are using `replit` as your hosting environment and unfortunately the API of brainshop does not support it and considers it as spam request. Your likely solution to find another hosting platform.  
 
 ## Credits
 - Thanks [BrainshopAI](http://brainshop.ai/) for providing free/fast clever bot API
