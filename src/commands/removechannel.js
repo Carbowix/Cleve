@@ -19,25 +19,26 @@ module.exports = {
     userPermissions: [PermissionFlagsBits.ManageChannels],
     botPermissions: [PermissionFlagsBits.SendMessages],
     run: async (client, interaction) => {
+        await interaction.deferReply();
         const selectedChannel = interaction.options.getChannel('channel')
         if (selectedChannel && client.misc.channels.includes(selectedChannel.id.toString())) {
             const permissions = selectedChannel.permissionsFor(client.user);
             if (permissions.has([PermissionFlagsBits.ViewChannel, PermissionFlagsBits.SendMessages])) {
                 client.misc.channels.splice(client.misc.channels.indexOf(selectedChannel.id.toString()), 1);
                 updateConfig(client); // Updates config file with latest configuration update.
-                return interaction.reply({
+                return interaction.editReply({
                     content: `:ballot_box_with_check: <#${selectedChannel.id}> has been successfuly removed as a chat channel`, 
                     ephemeral: true
                 })
             } else {
-                return interaction.reply({
+                return interaction.editReply({
                     content: `:x: No permission given to view the channel.`, 
                     ephemeral: true
                 })
             }
         } else {
-            return interaction.reply({
-                content: `:x: This channel is not set as a chatting channel.\nAllowed chat channels: ${client.misc.channels.map(ch => `<#${ch}>`).join(' ')}`, 
+            return interaction.editReply({
+                content: `:x: This channel is not set as a chatting channel. ${client.misc.channels.length > 0 ? '\nAllowed chat channels: ' + client.misc.channels.map(ch => `<#${ch}>`).join(' ') : ''}`, 
                 ephemeral: true
             })
         }

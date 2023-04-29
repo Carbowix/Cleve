@@ -19,6 +19,7 @@ module.exports = {
     userPermissions: [PermissionFlagsBits.ManageChannels],
     botPermissions: [PermissionFlagsBits.SendMessages],
     run: async (client, interaction) => {
+        await interaction.deferReply({ ephemeral: true });
         const selectedChannel = interaction.options.getChannel('channel')
         if (selectedChannel && !client.misc.channels.includes(selectedChannel.id.toString())) {
             if (selectedChannel.type != ChannelType.GuildText) return interaction.reply({
@@ -29,19 +30,19 @@ module.exports = {
             if (permissions.has([PermissionFlagsBits.ViewChannel, PermissionFlagsBits.SendMessages])) {
                 client.misc.channels.push(selectedChannel.id.toString());
                 updateConfig(client); // Updates config file with latest configuration update.
-                return interaction.reply({
+                return interaction.editReply({
                     content: `:ballot_box_with_check: <#${selectedChannel.id}> has been successfuly set as a chat channel`, 
                     ephemeral: true
                 })
             } else {
-                return interaction.reply({
+                return interaction.editReply({
                     content: `:x: No permission given to view the channel.`, 
                     ephemeral: true
                 })
             }
             //client.misc.channels.push(selectedChannel.id);
         } else {
-            return interaction.reply({
+            return interaction.editReply({
                 content: `:x: You already set this channel for chat`, 
                 ephemeral: true
             })

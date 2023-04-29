@@ -38,7 +38,7 @@
 - Once finished, edit [src/misc/config.json](https://github.com/Carbowix/Cleve/blob/master/src/misc/config.json) with the corresponding data given: 
 <img src="https://i.ibb.co/3y2PXDt/tut-03.png">
 
->**NOTE**: Don't edit **"url"**
+>**Note**: Don't edit **"url"**
 
 ### Adding discord bot details:
 - Create a discord bot [application](https://discordjs.guide/preparations/setting-up-a-bot-application.html#your-bot-s-token).
@@ -70,13 +70,13 @@ If you have any issues feel free to create one in the issues [section](https://g
 
 ## Frequently Asked Questions (FAQ)
 ### How to enable No mention feature
-Head to [src/misc/config.json](https://github.com/Carbowix/Cleve/blob/master/src/misc/config.json) and edit **"noMention"** value to `true`
+Head to [src/misc/config.json](https://github.com/Carbowix/Cleve/blob/master/src/misc/config.json#L19) and edit **"noMention"** value to `true`
 
 - **IMPORANT**: In-order for this feature to work, you will have to enable [MessageContent Privileged Intent](https://autocode.com/discord/threads/what-are-discord-privileged-intents-and-how-do-i-enable-them-tutorial-0c3f9977/) in your discord bot application. Otherwise it will produce and error like the following:
 <img src="./src/misc/images/error.png">
 
 ### How to enable Direct Messages feature
-Head to [src/misc/config.json](https://github.com/Carbowix/Cleve/blob/master/src/misc/config.json) and edit **"noMention"** value to `true`
+Head to [src/misc/config.json](https://github.com/Carbowix/Cleve/blob/master/src/misc/config.json#L20) and edit **"directMessage"** value to `true`
 
 ### Bot not replying / API error
 It most likely either you failed to to follow the [installation](#installation--setup) instructions correctly or Brainshop.ai API is [down](https://rapidapi.com/Acobot/api/brainshop-ai/discussions)

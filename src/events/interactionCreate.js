@@ -1,8 +1,11 @@
 const client = require('../index');
+
 module.exports = {
+    name: 'interactionCreate',
     once: false,
     run: (client, interaction) => {
         if (interaction.user.bot || !interaction.guild) return;
+        
         const command = client.slashCommands.get(interaction.commandName);
         if (command.userPermissions && command.botPermissions && command.run) {
             if (!interaction.member.permissions.has(command.userPermissions))
@@ -19,5 +22,6 @@ module.exports = {
         } else {
             console.error('[ERR] Can not process interaction due to invalid command structure.');
         }
+        
     }
 }
