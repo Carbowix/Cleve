@@ -16,12 +16,9 @@
 <a href="https://github.com/Carbowix/Cleve">
    <img src="https://img.shields.io/github/package-json/v/carbowix/cleve?style=for-the-badge" alt="cleve version"/>
 </a>
-<br>
-<a href="https://discord.gg/nntu7rgxtP">
-<img src="https://img.shields.io/discord/633795546724827157?color=5865F2&logo=discord&logoColor=white" alt="Discord server" />
-</a>
 </p>
 
+<h3 align="center">As of September 2024, Brainshop.ai is no longer available. Unfortunately, this bot is no longer supported or maintained and won't get further updates.</h3>
 
 ## Installation & Setup
 - [Node.js v16.9+](https://nodejs.org/en/download) is required to download.
